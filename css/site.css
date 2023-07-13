@@ -1,0 +1,225 @@
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+    /* fonts */
+    --ss-title-font: 'Bebas Neue', sans-serif;
+    --ss-subtitle-font: 'Fira Sans', sans-serif;
+    --ss-heading-font: 'Bebas Neue', sans-serif;
+    --ss-body-font: 'Roboto', sans-serif;
+
+    /* basic colors */
+    --ss-dark-color: #212121;
+    --ss-light-color: #deeefb;
+    --ss-background-color: rgba(250, 250, 250, 0.8);
+
+    /*text styles */
+    --ss-font-size: 1.2rem;
+    --ss-font-weight: 400;
+    --ss-line-height: 1.5rem;
+    --ss-title-color: var(--ss-dark-color);
+
+    /*blue theme */
+    --ss-theme-core: hsl(311, 28%, 30%);
+    --ss-theme-100: hsl(311, 50%, 91%);
+    --ss-theme-150: hsl(311, 50%, 86%);
+    --ss-theme-200: hsl(311, 50%, 81%);
+    --ss-theme-300: hsl(311, 50%, 71%);
+    --ss-theme-400: hsl(311, 50%, 61%);
+    --ss-theme-500: hsl(311, 50%, 51%);
+    --ss-theme-600: hsl(311, 50%, 41%);
+    --ss-theme-700: hsl(311, 50%, 31%);
+    --ss-theme-800: hsl(311, 50%, 21%);
+    --ss-theme-850: hsl(311, 50%, 16%);
+    --ss-theme-900: hsl(311, 50%, 11%);
+
+
+}
+
+
+/*element overrides*/
+body {
+    font-family: var(--ss-body-font);
+    font-size: var(--ss-font-size);
+    font-weight: var(--ss-font-weight);
+    line-height: var(--ss-line-weight);
+    color: var(--ss-dark-color);
+    background: var(--ss-background-color);
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-family: var(--ss-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--ss-title-color);
+    letter-spacing: .1rem;
+}
+
+a {
+    color: var(--ss-theme-500);
+}
+
+a:hover {
+    color: var(--ss-theme-400);
+}
+
+main {
+    margin-bottom: 5rem;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--ss-theme-600);
+    --bs-btn-border-color: var(--ss-theme-600);
+    --bs-btn-hover-bg: var(--ss-theme-700);
+    --bs-btn-hover-border-color: var(--ss-theme-700);
+
+}
+
+/*end element overrides*/
+
+/*landing section */
+#home {
+    background-color: var(--ss-theme-900);
+    background-image: url(/img/pexels-paul-blenkhorn-sensoryarthouse-12463825.jpg);/*should figure out if I need to do something here*/
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#homeCover {
+    backdrop-filter: brightness(0.35) blur(3px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mainLogo {
+    height: .8em;
+    /*em is relative to the parent*/
+    padding-left:
+}
+
+.mainTitle,
+.subTitle {
+    color: var(--ss-light-color);
+    text-transform: uppercase;
+}
+
+.mainTitle {
+    font-family: var(--ss-title-font);
+    font-size: 5rem;
+    /*rem is relative to the document*/
+    line-height: 4rem;
+}
+
+.subTitle {
+    font-family: var(--ss-subtitle-font);
+    font-size: 1.28rem;
+    line-height: 1.1rem;
+    letter-spacing: .1rem;
+    font-weight: 300;
+}
+
+/* end landing section */
+
+/*main content*/
+
+.section-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-page:nth-child(even) {
+    background-color: var(--ss-theme-100);
+}
+
+.section-page:nth-child(odd) {
+    background-color: var(--ss-theme-150);
+}
+
+
+/*end main content*/
+
+/* class style takes presedence over element style*/
+.socialIcons {
+    font-size: 2rem;
+    transition: color 0.25s;
+}
+
+.socialIcons:hover {
+    color: var(--ss-theme-core);
+}
+
+footer {
+    background-color: var(--ss-theme-900);
+}
+
+footer .card
+
+/*having the space looks inside the element*/
+    {
+    background-color: var(--ss-theme-800);
+}
+
+
+/* Media Queries */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .mainTitle{
+        font-size: 7rem;
+        line-height: 5.5rem;
+    }
+    .subTitle{
+        font-size: 1.7rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.18rem;
+        padding-top: .25rem;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }
