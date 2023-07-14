@@ -1,0 +1,64 @@
+.icon-card {
+    height: 100%;
+    transition: transform 0.25s ease-in-out;
+}
+
+.icon-card:hover {
+    transform: scale(1.03) translateY(-2%);
+
+}
+
+.icon-card-body {
+    background-color: var(--ss-theme-900);
+    color: var(--ss-light-color);
+    padding: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+    border-radius: .5rem;
+    border-color: var(--ss-theme-900);
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-top: -2.5rem;
+    transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25 ease-in-out;
+    height: calc(100% - 2.5rem);
+}
+
+.icon-card:hover .icon-card-body {
+    /*targets second element when first element is hovered over*/
+    background-color: var(--ss-theme-850);
+    border-color: var(--ss-theme-500);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.icon-card-header {
+    display: flex;
+    justify-content: space-evenly;
+    filter: drop-shadow(2px 6px 6px rgba(0, 0, 0, 0.7));
+}
+
+.icon>img {
+    height: 5rem;
+}
+
+.icon.git {
+    clip-path: polygon(9% 50%, 50% 91%, 91% 50%, 50% 9%);
+    background-color: white;
+}
+
+.icon.github {
+    clip-path: circle(39% at 50% 51%);
+    background-color: white;
+}
+
+.icon.dotnet {
+    clip-path: circle(40%);
+    background-color: white;
+}
+
+.icon {
+    padding: .5rem;
+    position: relative;
+    z-index: 2;
+}
