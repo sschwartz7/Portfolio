@@ -9,13 +9,13 @@
 }
 
 .icon-card-body {
-    background-color: var(--ss-theme-900);
-    color: var(--ss-light-color);
+    background-color: var(--ss-theme-300);
+    color: var(--ss-dark-color);
     padding: 2rem;
     padding-top: 4rem;
     text-align: center;
     border-radius: .5rem;
-    border-color: var(--ss-theme-900);
+    border-color: var(--ss-theme-400);
     border-style: solid;
     border-width: 2px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -26,8 +26,8 @@
 
 .icon-card:hover .icon-card-body {
     /*targets second element when first element is hovered over*/
-    background-color: var(--ss-theme-850);
-    border-color: var(--ss-theme-500);
+    background-color: var(--ss-theme-300);
+    border-color: var(--ss-theme-accent);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
