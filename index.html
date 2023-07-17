@@ -26,12 +26,86 @@
     <link href="/css/site.css" rel="stylesheet">
     <link href="/css/iconCard.css" rel="stylesheet">
     <link href="/css/hoverCard.css" rel="stylesheet">
+    <link href="/css/themes.css" rel="stylesheet">
+    <link href="/css/blogCard.css" rel="stylesheet">
+    <link href="/css/menuPill.css" rel="stylesheet">
     <!--favicon-->
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 
 <body data-ss-theme="main">
-    <main>
+    <!-- navbar -->
+    <div id="menuPillContainer" class="navbar navbar-dark">
+        <nav id="menuPill" class="navbar-nav text-light">
+            <div class="nav-item">
+                <a class="nav-link active" href="#home" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <span class="menu-label">Home</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#about" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="About" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </div>
+                    <span class="menu-label">About Me</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#skills" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Skills" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-wrench-adjustable"></i>
+                    </div>
+                    <span class="menu-label">Skills</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#projects" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Large Projects" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-braces-asterisk"></i>
+                    </div>
+                    <span class="menu-label">Large Projects</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#challenges" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Small Projects" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-terminal"></i>
+                    </div>
+                    <span class="menu-label">Small Projects</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#blog" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Blog" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <span class="menu-label">Blog</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#contact" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Contact" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </div>
+                    <span class="menu-label">Contact</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <main data-bs-spy="scroll" data-bs-target="#menuPill">
+
+
         <section id="home">
             <div id="homeCover">
                 <div id="homeAttr" class="text-secondary">
@@ -371,18 +445,206 @@
             </div>
         </section>
         <section id="blog" class="section-page">
-            <h2>Blog</h2>
+            <div class="container">
+                <h2 class="display-1 mb-5 text-center">
+                    Blog Stuff
+                </h2>
+                <p class="text-center">
+                    I write on my blog in order to share knowledge and grow community.
+                </p>
+                <div id="blogs">
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <div class="col-lg-4 blog-header">
+                                <!-- blog image -->
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Blog Post Image" />
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">11</div>
+                                    <div class="blog-month">JANUARY</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!-- title and text preview -->
+                                <div class="card-body h-100 d-flex flex-column justify-conten-around">
+                                    <h3 class="card-title">Make SQL Queries Fly</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptatem
+                                        quidem distinctio, expedita laudantium temporibus nobis eius culpa neque vel
+                                        natus fuga cupiditate vitae nam fugit error aperiam earum. Voluptatum?Lorem,
+                                        ipsum dolor sit amet consectetur adipisicing elit. Est facilis assumenda impedit
+                                        facere velit, eveniet mollitia deleniti expedita atque perspiciatis illum
+                                        incidunt officiis harum veritatis, beatae esse, nulla ullam provident!
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <div class="col-lg-4 blog-header">
+                                <!-- blog image -->
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="Blog Post Image" />
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">11</div>
+                                    <div class="blog-month">JANUARY</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!-- title and text preview -->
+                                <div class="card-body h-100 d-flex flex-column justify-conten-around">
+                                    <h3 class="card-title">Make SQL Queries Fly</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptatem
+                                        quidem distinctio, expedita laudantium temporibus nobis eius culpa neque vel
+                                        natus fuga cupiditate vitae nam fugit error aperiam earum. Voluptatum?Lorem,
+                                        ipsum dolor sit amet consectetur adipisicing elit. Est facilis assumenda impedit
+                                        facere velit, eveniet mollitia deleniti expedita atque perspiciatis illum
+                                        incidunt officiis harum veritatis, beatae esse, nulla ullam provident!
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <div class="col-lg-4 blog-header">
+                                <!-- blog image -->
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="Blog Post Image" />
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">11</div>
+                                    <div class="blog-month">JANUARY</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!-- title and text preview -->
+                                <div class="card-body h-100 d-flex flex-column justify-conten-around">
+                                    <h3 class="card-title">Make SQL Queries Fly</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptatem
+                                        quidem distinctio, expedita laudantium temporibus nobis eius culpa neque vel
+                                        natus fuga cupiditate vitae nam fugit error aperiam earum. Voluptatum?Lorem,
+                                        ipsum dolor sit amet consectetur adipisicing elit. Est facilis assumenda impedit
+                                        facere velit, eveniet mollitia deleniti expedita atque perspiciatis illum
+                                        incidunt officiis harum veritatis, beatae esse, nulla ullam provident!
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <div class="col-lg-4 blog-header">
+                                <!-- blog image -->
+                                <a href="#" class="blog-image-link">
+                                    <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image"
+                                        alt="Blog Post Image" />
+                                </a>
+                                <div class="blog-date">
+                                    <div class="blog-day">11</div>
+                                    <div class="blog-month">JANUARY</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!-- title and text preview -->
+                                <div class="card-body h-100 d-flex flex-column justify-conten-around">
+                                    <h3 class="card-title">Make SQL Queries Fly</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptatem
+                                        quidem distinctio, expedita laudantium temporibus nobis eius culpa neque vel
+                                        natus fuga cupiditate vitae nam fugit error aperiam earum. Voluptatum?Lorem,
+                                        ipsum dolor sit amet consectetur adipisicing elit. Est facilis assumenda impedit
+                                        facere velit, eveniet mollitia deleniti expedita atque perspiciatis illum
+                                        incidunt officiis harum veritatis, beatae esse, nulla ullam provident!
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text">
+                                        <small class="text-muted">Published 3 days ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
         <section id="contact" class="section-page">
-            <h2>Contact Me</h2>
+            <h1 class="text-center p-2">Contact Me</h1>
+            <div class="py-3 infoContainer container">
+                <div class="row">
+                    <form action="#" class="row row-cols-1">
+                        <div class="col-md-6">
+                            <label for="FirstName" class="form-label p-2">First Name</label>
+                            <input name="FirstName" type="text" id="FirstName" class="form-control"
+                                placeholder="First Name" aria-label="First Name" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="LastName" class="form-label p-2">Last Name</label>
+                            <input name="LastName" type="text" id="LastName" class="form-control"
+                                placeholder="Last Name" aria-label="Last Name" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Email" class="form-label p-2">Email</label>
+                            <input name="Email" type="email" id="Email" class="form-control" placeholder="Email"
+                                aria-label="Email" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Phone" class="form-label p-2">Phone (Optional)</label>
+                            <input name="Phone" type="tel" id="Phone" class="form-control" placeholder="Phone"
+                                aria-label="Phone" />
+                        </div>
+                        <div class="col">
+                            <label for="Subject" class="form-label p-2">Subject</label>
+                            <input name="Subject" type="text" id="Subject" class="form-control" placeholder="Subject"
+                                aria-label="Subject" required />
+                        </div>
+                        <div class="col">
+                            <label for="Message" class="form-label p-2">Message</label>
+                            <textarea name="Message" type="text" id="Message" class="form-control" placeholder="Message"
+                                aria-label="Message" required rows="4"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button class="btn btn-primary mt-2" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer class="py-3 fixed-bottom" data-bs-theme="dark">
         <div class="container-fluid">
             <div class="row align-items-center g-3">
-                <div class="col-3 col-lg-3">
+                <div class="col-3 col-lg-3 d-xl-none">
                     <a href="#home"> <img src="/img/ssmark.svg" alt="Logo" height="70" /></a>
+                </div>
+                <div class="col-3 col-xl-3 d-none d-xl-block">
+                    <a href="#home"> <img src="/img/ssname.svg" alt="Logo" height="70" /></a>
                 </div>
                 <div class="col-9 col-lg-6 d-flex justify-content-end justify-content-lg-center">
                     <div class="card shadow">
@@ -554,13 +816,13 @@
                                             alt="Bug Tracker Screenshot 3">
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#addressBookCarousel"
-                                    data-bs-slide="prev">
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#addressBookCarousel" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#addressBookCarousel"
-                                    data-bs-slide="next">
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#addressBookCarousel" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -644,8 +906,7 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="/img/logos/Blog_600.jpg" class="d-block w-100"
-                                            alt="Bug Tracker Logo">
+                                        <img src="/img/logos/Blog_600.jpg" class="d-block w-100" alt="Bug Tracker Logo">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
