@@ -1,5 +1,20 @@
 :root {
     /* #region BS color swatches */
+    ​--ss-theme-core: var(--ss-main-core);
+    --ss-theme-100: var(--ss-main-100);
+    --ss-theme-150: var(--ss-main-150);
+    --ss-theme-200: var(--ss-main-200);
+    --ss-theme-300: var(--ss-main-300);
+    --ss-theme-400: var(--ss-main-400);
+    --ss-theme-500: var(--ss-main-500);
+    --ss-theme-600: var(--ss-main-600);
+    --ss-theme-700: var(--ss-main-700);
+    --ss-theme-800: var(--ss-main-800);
+    --ss-theme-850: var(--ss-main-850);
+    --ss-theme-900: var(--ss-main-900);
+    --ss-theme-accent: var(--ss-main-accent);
+    --ss-theme-accent2: var(--ss-main-accent2);
+
     /* #region main */
     /*main theme */
     --ss-main-core: #613f8d;
@@ -14,25 +29,9 @@
     --ss-main-800: hsl(266, 50%, 21%);
     --ss-main-850: hsl(266, 50%, 16%);
     --ss-main-900: hsl(266, 50%, 11%);
-    --ss-main-accent2: #E6AD23;
-    --ss-main-accent: #ff0055;
+    --ss-main-accent2: rgb(230, 173, 35);
+    --ss-main-accent: rgb(255, 0, 85);
 
-    [data-ss-theme="main"] {
-        --ss-theme-core: var(--ss-main-core);
-        --ss-theme-100: var(--ss-main-100);
-        --ss-theme-150: var(--ss-main-150);
-        --ss-theme-200: var(--ss-main-200);
-        --ss-theme-300: var(--ss-main-300);
-        --ss-theme-400: var(--ss-main-400);
-        --ss-theme-500: var(--ss-main-500);
-        --ss-theme-600: var(--ss-main-600);
-        --ss-theme-700: var(--ss-main-700);
-        --ss-theme-800: var(--ss-main-800);
-        --ss-theme-850: var(--ss-main-850);
-        --ss-theme-900: var(--ss-main-900);
-        --ss-theme-accent: var(--ss-main-accent);
-        --ss-theme-accent2: var(--ss-main-accent2);
-    }
 
     /* #endregion main */
     /* #region blue */
@@ -51,22 +50,6 @@
     --ss-blue-accent: #E6AD23;
     --ss-blue-accent2: #0E3506;
 
-    [data-ss-theme="blue"] {
-        --ss-theme-core: var(--ss-blue-core);
-        --ss-theme-100: var(--ss-blue-100);
-        --ss-theme-150: var(--ss-blue-150);
-        --ss-theme-200: var(--ss-blue-200);
-        --ss-theme-300: var(--ss-blue-300);
-        --ss-theme-400: var(--ss-blue-400);
-        --ss-theme-500: var(--ss-blue-500);
-        --ss-theme-600: var(--ss-blue-600);
-        --ss-theme-700: var(--ss-blue-700);
-        --ss-theme-800: var(--ss-blue-800);
-        --ss-theme-850: var(--ss-blue-850);
-        --ss-theme-900: var(--ss-blue-900);
-        --ss-theme-accent: var(--ss-blue-accent);
-        --ss-theme-accent2: var(--ss-blue-accent2);
-    }
 
 
     /* #endregion blue */
@@ -86,22 +69,7 @@
     --ss-indigo-accent: #E6AD23;
     --ss-indigo-accent2: #0E3506;
 
-    [data-ss-theme="indigo"] {
-        --ss-theme-core: var(--ss-indigo-core);
-        --ss-theme-100: var(--ss-indigo-100);
-        --ss-theme-150: var(--ss-indigo-150);
-        --ss-theme-200: var(--ss-indigo-200);
-        --ss-theme-300: var(--ss-indigo-300);
-        --ss-theme-400: var(--ss-indigo-400);
-        --ss-theme-500: var(--ss-indigo-500);
-        --ss-theme-600: var(--ss-indigo-600);
-        --ss-theme-700: var(--ss-indigo-700);
-        --ss-theme-800: var(--ss-indigo-800);
-        --ss-theme-850: var(--ss-indigo-850);
-        --ss-theme-900: var(--ss-indigo-900);
-        --ss-theme-accent: var(--ss-indigo-accent);
-        --ss-theme-accent2: var(--ss-indigo-accent2);
-    }
+
 
 
     /* #endregion indigo */
@@ -121,22 +89,7 @@
     --ss-purple-accent: #E6AD23;
     --ss-purple-accent2: #0E3506;
 
-    [data-ss-theme="purple"] {
-        --ss-theme-core: var(--ss-purple-core);
-        --ss-theme-100: var(--ss-purple-100);
-        --ss-theme-150: var(--ss-purple-150);
-        --ss-theme-200: var(--ss-purple-200);
-        --ss-theme-300: var(--ss-purple-300);
-        --ss-theme-400: var(--ss-purple-400);
-        --ss-theme-500: var(--ss-purple-500);
-        --ss-theme-600: var(--ss-purple-600);
-        --ss-theme-700: var(--ss-purple-700);
-        --ss-theme-800: var(--ss-purple-800);
-        --ss-theme-850: var(--ss-purple-850);
-        --ss-theme-900: var(--ss-purple-900);
-        --ss-theme-accent: var(--ss-purple-accent);
-        --ss-theme-accent2: var(--ss-purple-accent2);
-    }
+
 
     /* #endregion purple */
     /* #region pink */
@@ -155,22 +108,7 @@
     --ss-pink-accent: #E6AD23;
     --ss-pink-accent2: #0E3506;
 
-    [data-ss-theme="pink"] {
-        --ss-theme-core: var(--ss-pink-core);
-        --ss-theme-100: var(--ss-pink-100);
-        --ss-theme-150: var(--ss-pink-150);
-        --ss-theme-200: var(--ss-pink-200);
-        --ss-theme-300: var(--ss-pink-300);
-        --ss-theme-400: var(--ss-pink-400);
-        --ss-theme-500: var(--ss-pink-500);
-        --ss-theme-600: var(--ss-pink-600);
-        --ss-theme-700: var(--ss-pink-700);
-        --ss-theme-800: var(--ss-pink-800);
-        --ss-theme-850: var(--ss-pink-850);
-        --ss-theme-900: var(--ss-pink-900);
-        --ss-theme-accent: var(--ss-pink-accent);
-        --ss-theme-accent2: var(--ss-pink-accent2);
-    }
+
 
 
     /* #endregion pink */
@@ -191,22 +129,7 @@
     --ss-red-accent2: #0E3506;
 
 
-    [data-ss-theme="red"] {
-        --ss-theme-core: var(--ss-red-core);
-        --ss-theme-100: var(--ss-red-100);
-        --ss-theme-150: var(--ss-red-150);
-        --ss-theme-200: var(--ss-red-200);
-        --ss-theme-300: var(--ss-red-300);
-        --ss-theme-400: var(--ss-red-400);
-        --ss-theme-500: var(--ss-red-500);
-        --ss-theme-600: var(--ss-red-600);
-        --ss-theme-700: var(--ss-red-700);
-        --ss-theme-800: var(--ss-red-800);
-        --ss-theme-850: var(--ss-red-850);
-        --ss-theme-900: var(--ss-red-900);
-        --ss-theme-accent: var(--ss-red-accent);
-        --ss-theme-accent2: var(--ss-red-accent2);
-    }
+
 
     /* #endregion red */
     /* #region orange */
@@ -226,22 +149,6 @@
     --ss-orange-accent2: #0E3506;
 
 
-    [data-ss-theme="orange"] {
-        --ss-theme-core: var(--ss-orange-core);
-        --ss-theme-100: var(--ss-orange-100);
-        --ss-theme-150: var(--ss-orange-150);
-        --ss-theme-200: var(--ss-orange-200);
-        --ss-theme-300: var(--ss-orange-300);
-        --ss-theme-400: var(--ss-orange-400);
-        --ss-theme-500: var(--ss-orange-500);
-        --ss-theme-600: var(--ss-orange-600);
-        --ss-theme-700: var(--ss-orange-700);
-        --ss-theme-800: var(--ss-orange-800);
-        --ss-theme-850: var(--ss-orange-850);
-        --ss-theme-900: var(--ss-orange-900);
-        --ss-theme-accent: var(--ss-orange-accent);
-        --ss-theme-accent2: var(--ss-orange-accent2);
-    }
 
 
     /* #endregion orange */
@@ -262,22 +169,6 @@
     --ss-yellow-accent2: #0E3506;
 
 
-    [data-ss-theme="yellow"] {
-        --ss-theme-core: var(--ss-yellow-core);
-        --ss-theme-100: var(--ss-yellow-100);
-        --ss-theme-150: var(--ss-yellow-150);
-        --ss-theme-200: var(--ss-yellow-200);
-        --ss-theme-300: var(--ss-yellow-300);
-        --ss-theme-400: var(--ss-yellow-400);
-        --ss-theme-500: var(--ss-yellow-500);
-        --ss-theme-600: var(--ss-yellow-600);
-        --ss-theme-700: var(--ss-yellow-700);
-        --ss-theme-800: var(--ss-yellow-800);
-        --ss-theme-850: var(--ss-yellow-850);
-        --ss-theme-900: var(--ss-yellow-900);
-        --ss-theme-accent: var(--ss-yellow-accent);
-        --ss-theme-accent2: var(--ss-yellow-accent2);
-    }
 
 
     /* #endregion yellow */
@@ -294,25 +185,10 @@
     --ss-green-800: hsl(152, 38%, 25%);
     --ss-green-850: hsl(152, 38%, 20%);
     --ss-green-900: hsl(152, 38%, 15%);
-    --ss-theme-accent: var(--ss-green-accent);
-    --ss-theme-accent2: var(--ss-green-accent2);
+    --ss-green-accent: #E6AD23;
+    --ss-green-accent2: #0E3506;
 
-    [data-ss-theme="green"] {
-        --ss-theme-core: var(--ss-green-core);
-        --ss-theme-100: var(--ss-green-100);
-        --ss-theme-150: var(--ss-green-150);
-        --ss-theme-200: var(--ss-green-200);
-        --ss-theme-300: var(--ss-green-300);
-        --ss-theme-400: var(--ss-green-400);
-        --ss-theme-500: var(--ss-green-500);
-        --ss-theme-600: var(--ss-green-600);
-        --ss-theme-700: var(--ss-green-700);
-        --ss-theme-800: var(--ss-green-800);
-        --ss-theme-850: var(--ss-green-850);
-        --ss-theme-900: var(--ss-green-900);
-        --ss-theme-accent: var(--ss-green-accent);
-        --ss-theme-accent2: var(--ss-green-accent2);
-    }
+
 
 
     /* #endregion green */
@@ -332,22 +208,7 @@
     --ss-teal-accent: #E6AD23;
     --ss-teal-accent2: #0E3506;
 
-    [data-ss-theme="teal"] {
-        --ss-theme-core: var(--ss-teal-core);
-        --ss-theme-100: var(--ss-teal-100);
-        --ss-theme-150: var(--ss-teal-150);
-        --ss-theme-200: var(--ss-teal-200);
-        --ss-theme-300: var(--ss-teal-300);
-        --ss-theme-400: var(--ss-teal-400);
-        --ss-theme-500: var(--ss-teal-500);
-        --ss-theme-600: var(--ss-teal-600);
-        --ss-theme-700: var(--ss-teal-700);
-        --ss-theme-800: var(--ss-teal-800);
-        --ss-theme-850: var(--ss-teal-850);
-        --ss-theme-900: var(--ss-teal-900);
-        --ss-theme-accent: var(--ss-teal-accent);
-        --ss-theme-accent2: var(--ss-teal-accent2);
-    }
+
 
     /* #endregion teal */
     /* #region cyan */
@@ -366,22 +227,6 @@
     --ss-cyan-accent: #E6AD23;
     --ss-cyan-accent2: #0E3506;
 
-    [data-ss-theme="cyan"] {
-        --ss-theme-core: var(--ss-cyan-core);
-        --ss-theme-100: var(--ss-cyan-100);
-        --ss-theme-150: var(--ss-cyan-150);
-        --ss-theme-200: var(--ss-cyan-200);
-        --ss-theme-300: var(--ss-cyan-300);
-        --ss-theme-400: var(--ss-cyan-400);
-        --ss-theme-500: var(--ss-cyan-500);
-        --ss-theme-600: var(--ss-cyan-600);
-        --ss-theme-700: var(--ss-cyan-700);
-        --ss-theme-800: var(--ss-cyan-800);
-        --ss-theme-850: var(--ss-cyan-850);
-        --ss-theme-900: var(--ss-cyan-900);
-        --ss-theme-accent: var(--ss-cyan-accent);
-        --ss-theme-accent2: var(--ss-cyan-accent2);
-    }
 
     /* #endregion cyan */
     /* #region gray */
@@ -400,22 +245,7 @@
     --ss-indigo-accent: #E6AD23;
     --ss-indigo-accent2: #0E3506;
 
-    [data-ss-theme="gray"] {
-        ​--ss-theme-core: var(--ss-gray-core);
-        --ss-theme-100: var(--ss-gray-100);
-        --ss-theme-150: var(--ss-gray-150);
-        --ss-theme-200: var(--ss-gray-200);
-        --ss-theme-300: var(--ss-gray-300);
-        --ss-theme-400: var(--ss-gray-400);
-        --ss-theme-500: var(--ss-gray-500);
-        --ss-theme-600: var(--ss-gray-600);
-        --ss-theme-700: var(--ss-gray-700);
-        --ss-theme-800: var(--ss-gray-800);
-        --ss-theme-850: var(--ss-gray-850);
-        --ss-theme-900: var(--ss-gray-900);
-        --ss-theme-accent: var(--ss-gray-accent);
-        --ss-theme-accent2: var(--ss-gray-accent2);
-    }
+
 
     /* #endregion gray */
     /* #endregion BS color swatches */
