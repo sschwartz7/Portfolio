@@ -15,7 +15,7 @@
     --ss-main-850: hsl(266, 50%, 16%);
     --ss-main-900: hsl(266, 50%, 11%);
     --ss-main-accent2: #E6AD23;
-    --ss-main-accent: #FF0054;
+    --ss-main-accent: #ff0055;
 
     [data-ss-theme="main"] {
         --ss-theme-core: var(--ss-main-core);
