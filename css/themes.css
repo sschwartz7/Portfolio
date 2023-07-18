@@ -2,20 +2,20 @@
     /* #region BS color swatches */
     /* #region main */
     /*main theme */
-    --ss-main-core: #62375a;
-    --ss-main-100: hsl(311, 50%, 91%);
-    --ss-main-150: hsl(311, 50%, 86%);
-    --ss-main-200: hsl(311, 50%, 81%);
-    --ss-main-300: hsl(311, 50%, 71%);
-    --ss-main-400: hsl(311, 50%, 61%);
-    --ss-main-500: hsl(311, 50%, 51%);
-    --ss-main-600: hsl(311, 50%, 41%);
-    --ss-main-700: hsl(311, 50%, 31%);
-    --ss-main-800: hsl(311, 50%, 21%);
-    --ss-main-850: hsl(311, 50%, 16%);
-    --ss-main-900: hsl(311, 50%, 11%);
-    --ss-main-accent: #E6AD23;
-    --ss-main-accent2: #0E3506;
+    --ss-main-core: #613f8d;
+    --ss-main-100: hsl(266, 50%, 91%);
+    --ss-main-150: hsl(266, 50%, 86%);
+    --ss-main-200: hsl(266, 50%, 81%);
+    --ss-main-300: #b090da;
+    --ss-main-400: #956acd;
+    --ss-main-500: hsl(266, 50%, 51%);
+    --ss-main-600: hsl(266, 50%, 41%);
+    --ss-main-700: hsl(266, 50%, 31%);
+    --ss-main-800: hsl(266, 50%, 21%);
+    --ss-main-850: hsl(266, 50%, 16%);
+    --ss-main-900: hsl(266, 50%, 11%);
+    --ss-main-accent2: #E6AD23;
+    --ss-main-accent: #FF0054;
 
     [data-ss-theme="main"] {
         --ss-theme-core: var(--ss-main-core);
