@@ -30,10 +30,10 @@
     <link href="/css/blogCard.css" rel="stylesheet">
     <link href="/css/menuPill.css" rel="stylesheet">
     <!--favicon-->
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 
-<body data-ss-theme="indigo">
+<body data-ss-theme="indigo" onload="fetchBlogData()">
     <!-- navbar -->
     <div id="menuPillContainer" class="navbar navbar-dark">
         <nav id="menuPill" class="navbar-nav text-light">
@@ -157,8 +157,8 @@
                             <div class="icon-card-body">
                                 <!-- Content -->
                                 <p>
-                                    I use C# to build all of my full-stack webapplications. Check them out in my <a href="#projects"
-                                        class="ssLink">projects</a> section.
+                                    I use C# to build all of my full-stack webapplications. Check them out in my <a
+                                        href="#projects" class="ssLink">projects</a> section.
 
                                 </p>
                                 <p>
@@ -191,7 +191,8 @@
                                 </div>
                             </div>
                             <div class="icon-card-body">
-                                <p>I have used a combination of HTML, CSS, and Bootstrap to build all of my websites. I enjoy using Bootstrap to create responsive well designed websites.</p>
+                                <p>I have used a combination of HTML, CSS, and Bootstrap to build all of my websites. I
+                                    enjoy using Bootstrap to create responsive well designed websites.</p>
                             </div>
                         </div>
                     </div>
@@ -206,7 +207,8 @@
                                 </div>
                             </div>
                             <div class="icon-card-body">
-                                <p>I have extensive knowledge of JavaScript, which I have used to build many projects. Check out my <a href=#challenges>small project</a>
+                                <p>I have extensive knowledge of JavaScript, which I have used to build many projects.
+                                    Check out my <a href=#challenges>small project</a>
                                     section for some JS projects</p>
                             </div>
                         </div>
@@ -222,7 +224,8 @@
                                 </div>
                             </div>
                             <div class="icon-card-body">
-                                <p>All of my <a href=#projects>large project</a> utilize a database. While I can write SQL on any DB platform, Postgres is my database of choice. </p>
+                                <p>All of my <a href=#projects>large project</a> utilize a database. While I can write
+                                    SQL on any DB platform, Postgres is my database of choice. </p>
                             </div>
                         </div>
                     </div>
@@ -239,7 +242,9 @@
                                 </div>
                             </div>
                             <div class="icon-card-body">
-                                <p>All of my projects are stored and updated on <a href="https://github.com/sschwartz7">GitHub</a> using the git language. I use CI/CD to keep things up to date.</p>
+                                <p>All of my projects are stored and updated on <a
+                                        href="https://github.com/sschwartz7">GitHub</a> using the git language. I use
+                                    CI/CD to keep things up to date.</p>
                             </div>
                         </div>
                     </div>
@@ -281,7 +286,7 @@
                                 </picture>
                                 <div class="hc-content">
                                     <p>
-                                        PLACEHOLDER TEXT
+                                        Shark Address is a full-stack Address Book.
                                     </p>
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#addresBookModal">
@@ -300,7 +305,7 @@
                                 </picture>
                                 <div class="hc-content">
                                     <p>
-                                        PLACEHOLDER TEXT
+                                        MSTB a blog about technology.
                                     </p>
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#blogModal">
@@ -365,7 +370,7 @@
                                 </picture>
                                 <div class="hc-content">
                                     <p>
-                                        Reversing a String 
+                                        Reversing a String
                                     </p>
                                     <a class="btn btn-primary" href="https://reversi-silk.vercel.app">
                                         Learn More
@@ -440,149 +445,13 @@
                     I write on my blog in order to share knowledge and grow community.
                 </p>
                 <div id="blogs">
-                    <article class="card mb-4 blog-article">
-                        <div class="row blog-row g-0">
-                            <div class="col-lg-4 blog-header">
-                                <!-- blog image -->
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Blog Post Image" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">11</div>
-                                    <div class="blog-month">JANUARY</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <!-- title and text preview -->
-                                <div class="card-body h-100 d-flex flex-column justify-conten-around ">
-                                    <h3 class="card-title">Make SQL Queries Fly</h3>
-                                    <p class="card-text line-clamp">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptatem
-                                        quidem distinctio, expedita laudantium temporibus nobis eius culpa neque vel
-                                        natus fuga cupiditate vitae nam fugit error aperiam earum. Voluptatum?Lorem,
-                                        ipsum dolor sit amet consectetur adipisicing elit. Est facilis assumenda impedit
-                                        facere velit, eveniet mollitia deleniti expedita atque perspiciatis illum
-                                        incidunt officiis harum veritatis, beatae esse, nulla ullam provident!
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
-                                    <p class="card-text">
-                                        <small class="text-muted">Published 3 days ago</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row blog-row g-0">
-                            <div class="col-lg-4 blog-header">
-                                <!-- blog image -->
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="Blog Post Image" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">11</div>
-                                    <div class="blog-month">JANUARY</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <!-- title and text preview -->
-                                <div class="card-body h-100 d-flex flex-column justify-conten-around">
-                                    <h3 class="card-title">Make SQL Queries Fly</h3>
-                                    <p class="card-text line-clamp">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptatem
-                                        quidem distinctio, expedita laudantium temporibus nobis eius culpa neque vel
-                                        natus fuga cupiditate vitae nam fugit error aperiam earum. Voluptatum?Lorem,
-                                        ipsum dolor sit amet consectetur adipisicing elit. Est facilis assumenda impedit
-                                        facere velit, eveniet mollitia deleniti expedita atque perspiciatis illum
-                                        incidunt officiis harum veritatis, beatae esse, nulla ullam provident!
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
-                                    <p class="card-text">
-                                        <small class="text-muted">Published 3 days ago</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row blog-row g-0">
-                            <div class="col-lg-4 blog-header">
-                                <!-- blog image -->
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="Blog Post Image" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">11</div>
-                                    <div class="blog-month">JANUARY</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <!-- title and text preview -->
-                                <div class="card-body h-100 d-flex flex-column justify-conten-around">
-                                    <h3 class="card-title">Make SQL Queries Fly</h3>
-                                    <p class="card-text line-clamp">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptatem
-                                        quidem distinctio, expedita laudantium temporibus nobis eius culpa neque vel
-                                        natus fuga cupiditate vitae nam fugit error aperiam earum. Voluptatum?Lorem,
-                                        ipsum dolor sit amet consectetur adipisicing elit. Est facilis assumenda impedit
-                                        facere velit, eveniet mollitia deleniti expedita atque perspiciatis illum
-                                        incidunt officiis harum veritatis, beatae esse, nulla ullam provident!
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
-                                    <p class="card-text">
-                                        <small class="text-muted">Published 3 days ago</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row blog-row g-0">
-                            <div class="col-lg-4 blog-header">
-                                <!-- blog image -->
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image"
-                                        alt="Blog Post Image" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">11</div>
-                                    <div class="blog-month">JANUARY</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <!-- title and text preview -->
-                                <div class="card-body h-100 d-flex flex-column justify-conten-around">
-                                    <h3 class="card-title">Make SQL Queries Fly</h3>
-                                    <p class="card-text line-clamp">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptatem
-                                        quidem distinctio, expedita laudantium temporibus nobis eius culpa neque vel
-                                        natus fuga cupiditate vitae nam fugit error aperiam earum. Voluptatum?Lorem,
-                                        ipsum dolor sit amet consectetur adipisicing elit. Est facilis assumenda impedit
-                                        facere velit, eveniet mollitia deleniti expedita atque perspiciatis illum
-                                        incidunt officiis harum veritatis, beatae esse, nulla ullam provident!
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
-                                    <p class="card-text">
-                                        <small class="text-muted">Published 3 days ago</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+
                 </div>
             </div>
         </section>
         <section id="contact" class="section-page">
             <h1 class="text-center p-2">Contact Me</h1>
-            <div class="py-3 infoContainer container">
+            <div class="p-3 pe-1 infoContainer container">
                 <div class="row">
                     <form action="https://formspree.io/f/xnqknynl" class="row row-cols-1" name="PortfolioContact"
                         method="post">
@@ -821,7 +690,8 @@
                                 Shark Address
                             </h3>
                             <p>
-                                Shark Address is a full-stack web app address book. It is build in C# using a MVC template. 
+                                Shark Address is a full-stack web app address book. It is build in C# using a MVC
+                                template.
                             </p>
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad atque quod sunt quaerat,
@@ -921,20 +791,13 @@
                         <div class="col-lg-7">
                             <!-- about the project -->
                             <h3>
-                                Address Book
+                                MSTB
                             </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime soluta qui tenetur,
-                                numquam consectetur nam, doloribus, quibusdam beatae architecto rem et maiores? Earum
-                                ipsum sed quasi ad laborum quos cupiditate.
+                                This is a blog created using the .Net Stack and published on railway.app. It has user authentification, a database, and service injection.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad atque quod sunt quaerat,
-                                corporis dolorum quo asperiores mollitia dolorem porro dicta ducimus doloribus, eaque
-                                iste expedita, nihil repellat odio libero. Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Accusantium repellendus sed et? Corrupti, asperiores. Quam,
-                                reprehenderit! Quasi esse sit earum incidunt? Eius commodi quidem autem ducimus
-                                perspiciatis? Amet, est dolor.
+                                
                             </p>
                             <ul class="list-group">
                                 <li class="list-group-item">
@@ -966,11 +829,42 @@
                 </div>
                 <div class=" modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="#" target="_blank" class="btn btn-primary">Visit Project</a>
+                    <a href="https://mstb.up.railway.app/" target="_blank" class="btn btn-primary">Visit Project</a>
                 </div>
             </div>
         </div>
     </div>
+    <!--Template-->
+    <template id="blog-template">
+        <article class="card mb-4 blog-article">
+            <div class="row blog-row g-0">
+                <div class="col-lg-4 blog-header">
+                    <!-- blog image -->
+                    <a href="#" class="blog-image-link">
+                        
+                    </a>
+                    <div class="blog-date">
+                        <div class="blog-day"></div>
+                        <div class="blog-month"></div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <!-- title and text preview -->
+                    <div class="card-body h-100 d-flex flex-column justify-content-around ">
+                        <h3 class="card-title blog-title"></h3>
+                        <p class="card-text line-clamp blog-content ">
+                        </p>
+                        <div>
+                            <a href="#" class="btn btn-primary read-more-link">Read More</a>
+                        </div>
+                        <p class="card-text">
+                            <small class="text-muted publishedDate">Published 3 days ago</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </template>
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -980,7 +874,9 @@
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
     </script>
+    <script src="/js/blogApi.js"></script>
 </body>
 
 </html>
